@@ -1,0 +1,3 @@
+[submodule "impress-extras"]
+	path = src/impress-extras
+	url = https://github.com/impress/impress-extras

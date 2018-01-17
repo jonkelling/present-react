@@ -21,7 +21,7 @@ class App extends Component {
       </div>
     </div>;
 
-    return !this.state.showPresentation ? startScreen : <Presentation />;
+    return this.state.showPresentation ? startScreen : <Presentation />;
   }
 }
 

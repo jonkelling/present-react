@@ -22,7 +22,7 @@ export default class Presentation2 extends React.Component {
     
     async reloadContent() {
         let content;
-        if (!window.location.hostname.includes('github.io')) {
+        if (!window.location.hostname.includes('github.io') && !window.location.href.includes('file:')) {
             const response = await fetch('/api/presentation');
             content = await response.text();
         }

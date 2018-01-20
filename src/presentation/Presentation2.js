@@ -2,8 +2,8 @@ import React from 'react';
 import { Appear, BlockQuote, Cite, CodePane, Code, Deck, Fill, Fit,
     Heading, Image, Layout, ListItem, List, Quote, Slide, Text, MarkdownSlides } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
-import SequenceDiagram from 'react-sequence-diagram';
 import './Presentation.css';
+import md from '../../presentation.md';
 
 export default class Presentation2 extends React.Component {
     constructor(props) {
@@ -21,8 +21,14 @@ export default class Presentation2 extends React.Component {
     }
     
     async reloadContent() {
-        const response = await fetch('/api/presentation');
-        const content = await response.text();
+        let content;
+        if (!window.location.hostname.includes('github.com')) {
+            const response = await fetch('/api/presentation');
+            content = await response.text();
+        }
+        else {
+            content = md;
+        }
         const matches =
             content
             .split(/^(?=#\s)/m)

@@ -11,11 +11,22 @@
 
 # Who's Using It?
 
-- [yahoo.com](http://yahoo.com) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _News + other areas_
-- [facebook.com](http://facebook.com)
-- [office.com](http://office.com) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _Office 365_
-- [outlook.office365.com](http://outlook.office365.com)
-- [walmart.com](http://walmart.com) &nbsp;&nbsp;&nbsp;&nbsp; _(article)_
+[yahoo.com]: http://yahoo.com
+[facebook.com]: http://facebook.com
+[office.com]: http://office.com
+[outlook.office365.com]: http://outlook.office365.com
+[walmart.com]: http://walmart.com
+[walmart-article]: https://www.informationweek.com/devops/programming-languages/walmart-agility-enabled-with-reactjs-nodejs/d/d-id/1328676?
+
+&nbsp;
+
+| | |
+| - | -
+| [yahoo.com][yahoo.com] | News + other areas
+| [facebook.com][facebook.com] | Because obviously
+| [office.com][office.com] | Office 365
+| [outlook.office365.com][outlook.office365.com] | MS likes React
+| [walmart.com][walmart.com] | [(article)][walmart-article]
 
 ---
 

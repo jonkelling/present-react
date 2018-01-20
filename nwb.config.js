@@ -5,14 +5,19 @@ module.exports = {
       md: {
         test: /\.md$/,
         use: [
-          {
-            loader: "markdown-loader",
-            options: {
-              gfm: false
-            }
-          }
+            "raw-loader"
         ]
       }
+    },
+    extra: {
+        module: {
+            rules: [
+                {
+                    test: /\.md$/,
+                    use: 'raw-loader'
+                }
+            ]
+        }
     }
   }
 }

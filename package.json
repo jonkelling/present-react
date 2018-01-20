@@ -6,23 +6,87 @@
   "scripts": {
     "build": "nwb build-react-app",
     "clean": "nwb clean-app",
-    "start": "nwb serve-react-app",
+    "start": "node server.js",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
+    "color": "^2.0.1",
+    "github-markdown-css": "^2.10.0",
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^2.0.2",
+    "raw-loader": "^0.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-highlight.js": "^1.0.7",
     "react-impressjs": "^1.1.0",
-    "react-markdown": "^3.1.4"
+    "react-jss": "^8.2.1",
+    "react-markdown": "^3.1.4",
+    "react-transition-group": "^2.2.1",
+    "spectacle": "^4.0.5"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^22.1.0",
+    "enzyme": "^3.3.0",
     "eslint": "^4.15.0",
+    "eslint-config-xo": "^0.19.0",
+    "eslint-config-xo-react": "^0.15.0",
     "eslint-plugin-react": "^7.5.1",
+    "jest": "^22.1.4",
+    "jest-cli": "^22.1.4",
     "nwb": "0.21.x"
   },
   "author": "",
   "license": "MIT",
-  "repository": ""
+  "repository": "",
+  "babel": {
+    "presets": [
+      "react",
+      "stage-1"
+    ],
+    "env": {
+      "development": {
+        "presets": [
+          "env",
+          "react-hmre"
+        ]
+      },
+      "production": {
+        "presets": [
+          [
+            "env",
+            {
+              "es2015": {
+                "modules": false
+              },
+              "targets": {
+                "ie": 9,
+                "uglify": true
+              }
+            }
+          ]
+        ],
+        "plugins": [
+          "transform-react-constant-elements",
+          "transform-react-remove-prop-types"
+        ]
+      },
+      "test": {
+        "presets": [
+          "env"
+        ]
+      }
+    }
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|svg|md)$": "<rootDir>/src/configs/empty-module.js"
+    },
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "Container.js"
+    ]
+  }
 }

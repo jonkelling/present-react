@@ -1,13 +1,13 @@
 import './App.css'
 
 import React, {Component} from 'react'
-import Presentation from './presentation/Presentation'
+import Presentation from './presentation/Presentation2';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showPresentation: false
+      showPresentation: true
     }
   }
   render() {
@@ -21,7 +21,7 @@ class App extends Component {
       </div>
     </div>;
 
-    return this.state.showPresentation ? startScreen : <Presentation />;
+    return !this.state.showPresentation ? startScreen : <Presentation />;
   }
 }
 

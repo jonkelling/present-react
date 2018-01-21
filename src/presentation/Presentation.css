@@ -7,8 +7,28 @@
     fill: white;
 }
 
+.spectacle-content {
+    font-size: 1.33em;
+}
+
+.spectacle-content thead td {
+    font-size: 150%;
+}
+
 .spectacle-content rect+text {
     fill: black;
+}
+
+.spectacle-content .text-left {
+    text-align: left;
+}
+
+.spectacle-content .text-right {
+    text-align: right;
+}
+
+.spectacle-content .text-center {
+    text-align: center;
 }
 
 .step {

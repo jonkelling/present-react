@@ -1,7 +1,6 @@
 module.exports = {
   type: 'react-app',
   webpack: {
-      publicPath: './',
     rules: {
       md: {
         test: /\.md$/,

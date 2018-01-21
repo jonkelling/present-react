@@ -22,19 +22,12 @@ export default class Presentation2 extends React.Component {
     
     async reloadContent() {
         let content;
-        if (!window.location.hostname.includes('github.io') && !window.location.href.includes('file:')) {
+        if (!window.location.hostname.includes('github.io')) {
             const response = await fetch('/api/presentation');
             content = await response.text();
         }
         else {
             content = md;
-        }
-        const matches =
-            content
-            .split(/^(?=#\s)/m)
-            .map(x => x.split(/(?:^(?=(?:```|#{2,}\s+)\w+)|[\r\n]^```$)/m));
-        if (content === this.state.content) {
-            return;
         }
         const images = [
             { id: 'react', url: require('../../public/react.png') },
@@ -43,10 +36,19 @@ export default class Presentation2 extends React.Component {
             { id: 'most-popular-languages', url: require('../../public/most_popular_programming_languages.png') },
             { id: 'most-contributors', url: require('../../public/most_contributors.png') },
             { id: 'tech', url: require('../../public/tech.png') },
+            { id: 'redux-flow1', url: require('../../public/redux-flow1.png') },
         ].map(x => `[${x.id}]: ${x.url}`)
         .join("\n");
+        content = `${images}\n\n${content}`.replace(/^-{3}$/gm, `\n---\n\n${images}\n`);
+        const matches =
+            content
+            .split(/^(?=#\s)/m)
+            .map(x => x.split(/(?:^(?=(?:```|#{2,}\s+)\w+)|[\r\n]^```$)/m));
+        if (content === this.state.content) {
+            return;
+        }
         this.setState({
-            content: `${images}\n\n${content}`.replace(/^---$/gm, `\n---\n\n${images}\n`),
+            content,
             steps: matches,
             images
         });

@@ -9,6 +9,18 @@
 
 ---
 
+# Overview
+
+-----
+
+| __Part 1__ | __Part 2__ | __Part 3__ |
+|:---------- |:---------- |:---------- |
+| &cir;&nbsp; What is React? | &cir;&nbsp; Unit Testing | &cir;&nbsp; What is Redux?
+| &cir;&nbsp; Why? | | &cir;&nbsp; State is your friend
+| &cir;&nbsp; Let's code! | | &cir;&nbsp; More coding!
+
+---
+
 # Who's Using It?
 
 [yahoo.com]: http://yahoo.com
@@ -21,12 +33,12 @@
 &nbsp;
 
 | | |
-| - | -
-| [yahoo.com][yahoo.com] | News + other areas
-| [facebook.com][facebook.com] | Because obviously
-| [office.com][office.com] | Office 365
-| [outlook.office365.com][outlook.office365.com] | MS likes React
-| [walmart.com][walmart.com] | [(article)][walmart-article]
+| -:| - |:-
+| [yahoo.com][yahoo.com] | &nbsp;&nbsp;&nbsp; | News + other areas
+| [facebook.com][facebook.com] | | Because obviously
+| [office.com][office.com] | | Office 365
+| [outlook.office365.com][outlook.office365.com] | | MS likes React
+| [walmart.com][walmart.com] | | [(article)][walmart-article]
 
 ---
 
@@ -56,7 +68,7 @@ __Projects with the most contributors__
 
 ---
 
-![][tech]
+![Tech][tech]
 
 -----
 
@@ -67,13 +79,7 @@ __Projects with the most contributors__
 
 ---
 
-# Redux Flow
-
-<div id="diagram"></div>
-
-
-fdsfads
-
+![Redux Flow][redux-flow1]
 
 ---
 

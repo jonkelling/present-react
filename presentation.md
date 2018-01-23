@@ -79,6 +79,26 @@ __Projects with the most contributors__
 
 ---
 
+UFO Sightings
+
+| Components | State |
+|:---------- |:----- |
+| Table      |
+| Lookup by shape       |
+| Sighting of the day   |
+| Tabbed Display (opened items) |
+
+---
+
+Best Practices
+
+- If a value can be calculated, it should be (use local state sparingly).
+- Calculations and conditionals should happen in render.
+- Keep components small, simple.
+
+
+---
+
 ![Redux Flow][redux-flow1]
 
 ---
@@ -88,3 +108,4 @@ __Projects with the most contributors__
 - [9 things every React.js beginner should know](https://camjackson.net/post/9-things-every-reactjs-beginner-should-know)
 - [React Architecture and Best Practices](https://github.com/markerikson/react-redux-links/blob/master/react-architecture.md)
 - [Clean Code vs. Dirty Code: React Best Practices](http://americanexpress.io/clean-code-dirty-code/)
+

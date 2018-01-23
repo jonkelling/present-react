@@ -17,6 +17,7 @@
     "color": "^2.0.1",
     "github-markdown-css": "^2.10.0",
     "html-loader": "^0.5.5",
+    "linq": "^3.0.9",
     "markdown-loader": "^2.0.2",
     "raw-loader": "^0.5.1",
     "react": "^16.2.0",
@@ -29,8 +30,10 @@
     "spectacle": "^4.0.5"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-jest": "^22.1.0",
+    "babel-preset-react-hmre": "^1.1.1",
     "copy": "^0.3.1",
     "enzyme": "^3.3.0",
     "eslint": "^4.15.0",

@@ -16,7 +16,7 @@
 | __Part 1__ | __Part 2__ | __Part 3__ |
 |:---------- |:---------- |:---------- |
 | &cir;&nbsp; What is React? | &cir;&nbsp; Unit Testing | &cir;&nbsp; What is Redux?
-| &cir;&nbsp; Why? | | &cir;&nbsp; State is your friend
+| &cir;&nbsp; Why use it? | | &cir;&nbsp; State is your friend
 | &cir;&nbsp; Let's code! | | &cir;&nbsp; More coding!
 
 ---
@@ -46,11 +46,29 @@
 
 <!-- {{ x: step * 1200 * 1 }} -->
 
-- Hiring Trends in 2017
+-----
+
+Cross Platform
+
+Community Support
+
+Unidirectional Data Flow
+
+Excellent for Small, Medium, or Large Applications
 
 
-- Unidirectional Data Flow
 
+---
+
+![https://www.otssolutions.com/blog/wp-content/uploads/react-native-for-cross-platform-mobile-app-development.jpg](https://www.otssolutions.com/blog/wp-content/uploads/react-native-for-cross-platform-mobile-app-development.jpg)
+
+---
+
+![https://cdn.images.dailystar.co.uk/dynamic/184/photos/222000/620x/Oculus-Rift-Vr-Headset-Facebook-data-505708.jpg](https://cdn.images.dailystar.co.uk/dynamic/184/photos/222000/620x/Oculus-Rift-Vr-Headset-Facebook-data-505708.jpg)
+
+---
+
+![https://zgab33vy595fw5zq-zippykid.netdna-ssl.com/wp-content/uploads/2017/03/ChangesinDemand.png](https://zgab33vy595fw5zq-zippykid.netdna-ssl.com/wp-content/uploads/2017/03/ChangesinDemand.png)
 
 ---
 
@@ -79,23 +97,83 @@ __Projects with the most contributors__
 
 ---
 
-UFO Sightings
+# UFO Sightings
 
-| Components | State |
-|:---------- |:----- |
-| Table      |
-| Lookup by shape       |
-| Sighting of the day   |
-| Tabbed Display (opened items) |
+-----
+
+| Components | |
+|:---------- 
+
+- List
+- Filter by shape, state, etc.
+- Sighting of the day (ticker, react-truncate)
+- Tabbed Display (opened items)
+- Ratings
+- Filter by Rating
 
 ---
 
-Best Practices
+# Museums
 
-- If a value can be calculated, it should be (use local state sparingly).
+-----
+
+| Components | |
+|:----------
+
+- List
+- Detail
+- Filter by State
+- Find nearest museum
+
+
+---
+
+# TED Talks
+
+-----
+
+| Components | |
+|:----------
+
+- Word cloud ([react-tag-cloud](https://www.npmjs.com/package/react-tag-cloud))
+- Posts with tag lookup (table)
+- Event Quick Detail
+- Full Transcript
+- Ratings
+- Related Talks
+- Formatted Duration
+- Formatted Date
+
+
+---
+
+# A few packages for convenience
+
+linq
+```js
+import Enumerable from 'linq';
+Enumerable.from(someArray)
+    .where(x => x.someProp === 'someValue')
+    .select(x => ({...x}))
+    .toArray();
+```
+
+-----
+
+react-overflow-ellipsis
+```js
+import OverflowEllipsis from 'react-overflow-ellipsis'
+<OverflowEllipsis>{longText}</OverflowEllipsis>
+```
+
+
+---
+
+# Best Practices
+
+- If it can be calculated, it should be (see: [identify state](https://reactjs.org/docs/thinking-in-react.html#step-3-identify-the-minimal-but-complete-representation-of-ui-state))
 - Calculations and conditionals should happen in render.
 - Keep components small, simple.
-
 
 ---
 

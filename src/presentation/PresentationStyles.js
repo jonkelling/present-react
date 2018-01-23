@@ -1,9 +1,11 @@
+const topClass = '.spectacle';
+
 export default {
-    '@global .step': {
+    [`@global ${topClass} .step`]: {
         backgroundColor: 'whitesmoke'
     },
     
-    ['@global #react-impressjs, body']: {
+    [`@global #react-impressjs, body, ${topClass}`]: {
     },
 
     // '@global #react-impressjs ol, #react-impressjs ul': {
@@ -16,33 +18,35 @@ export default {
     } */
     
     /* Highlight.js used for coloring pre > code blocks. */
-    '@global pre': {
-        margin: '0.5em 0'
+    [`@global ${topClass} pre`]: {
+        margin: '0.5em 0',
+        fontSize: '0.8em'
     },
-    '@global pre > code': {
+    
+    [`@global ${topClass} pre > code`]: {
         /* font-size: 14px; */
         textShadow: '0 0 0 rgba(0, 0, 0, 0)'
     },
     
     /* Inline code, no Highlight.js */
-    '@global code': {
+    [`@global ${topClass} code`]: {
         fontFamily: '"Cutive mono","Courier New", monospace'
     },
     
-    '@global .step > *': {
+    [`@global ${topClass} .step > *`]: {
         zoom: '65%'
     },
     
-    '@global .step-0 > *': {
+    [`@global ${topClass} .step-0 > *`]: {
         zoom: '60%'
     },
     
-    '@global .step-0 h1': {
+    [`@global ${topClass} .step-0 h1`]: {
         whiteSpace: 'nowrap',
         textAlign: 'center',
     },
     
-    '@global .step-0 img': {
+    [`@global ${topClass} .step-0 img`]: {
         height: '100px',
         width: '100%',
         verticalAlign: 'middle',

@@ -11,6 +11,15 @@
     font-size: 1.33em;
 }
 
+.spectacle-content pre {
+    font-size: 1.8em !important;
+}
+
+.spectacle-content ul {
+    list-style-position: unset;
+    margin-left: 40px;
+}
+
 .spectacle-content thead td {
     font-size: 150%;
 }
